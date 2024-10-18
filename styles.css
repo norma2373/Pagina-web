@@ -1,0 +1,275 @@
+* {
+    color: rgb(47, 13, 240);
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: rgb(5, 50, 252);
+    background: rgb(241, 241, 237);
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: none;
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+   
+}
+/*para justify-content*/
+.nav-container {
+    display: flex;
+    justify-content: start;
+    align-items: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: rgb(190, 80, 141);
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: first baseline;
+}
+
+/*PARA FLEX DIRECTION*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: rgb(131, 7, 248);
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+margin-left: 10rem;
+}
+
+.menu a {
+    color: blueviolet;
+    text-decoration: none;
+    padding: 0;
+}
+
+/*CSS*/
+
+/* Reset básico para márgenes y rellenos */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e2e9bdfd;
+    color: rgb(223, 224, 197);
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    max-width: 40%; /* Asegura que el contenedor no sea más ancho que su contenedor padre */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la imagen */
+}
+
+/* Estilo para la imagen */
+img {
+    width: 30%; 
+    height: auto; 
+   border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: var(--color-header-footer);
+    color: #fff;
+    text-align: justify;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px; /* Asegura separación del resto del contenido */
+}
+
+
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor del formulario */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efecto hover en el contenedor del formulario */
+.contact-form-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para las etiquetas y campos del formulario */
+.contact-form-container form div {
+    margin-bottom: 20px;
+}
+
+.contact-form-container label {
+    display: block;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto cuando el campo está enfocado */
+.contact-form-container input:focus, 
+.contact-form-container textarea:focus {
+    border-color: #007BFF;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form-container textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Botones del formulario */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contact-form-container button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de limpiar */
+.contact-form-container button[type="reset"] {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Botón de enviar */
+.contact-form-container button[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* Hover en los botones */
+.contact-form-container button:hover {
+    opacity: 0.85;
+}
+footer{
+    margin: 0;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 17px;    
+}
+.social-links{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 135px;
+}
+.fa-brands{
+    box-shadow: 1px 2px 5px #000;
+    text-align: center;
+    color: #220cee;
+    height: 31px;
+    width: 31px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.fa-instagram:hover{
+    background: #833ab4;
+    background: linear-gradient(to bottom,#833ab4,#fd1d1d,#fcb045);
+    color: #fff;
+}
+.fa-facebook-f:hover{
+    background: #1877F2;
+    color: #fff;
+}
+
+/* Estilos para una mejor disposición en pantallas pequeñas */
+@media (max-width: 768px) {
+    article.hoteles {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 710px){
+    .barras{
+        display: block;
+        top: 0%;
+        margin: 5px 13px;
+    }
+    .parts{
+        flex-direction: column;
+        position:absolute;
+        width: 100%;
+        background-color: var(--color-header-footer);
+        top: 58px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px;
+    }
+    #check:checked ~.parts{
+        left: 0;
+    }
+}
+
